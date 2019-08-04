@@ -215,31 +215,38 @@ class Application(ttk.Frame):
         # empty the treeview
         self.list_id = []
         self.tv.delete(*self.tv.get_children())
-        #
-        for item in self.toc:
+        
+        # if there is an outline
+        if self.toc:
             #
-            idx = item[0]
+            for item in self.toc:
+                #
+                idx = item[0]
 
-            if idx == 1:
+                if idx == 1:
 
-                self.list_id = []
-                id = self.tv.insert("", 0, text=item[1], values=(item[2]))
-
-                self.list_id.append(id)
-            elif idx > 1:
-                while len(self.list_id) >= idx:
-                    self.list_id.pop()
-                
-                if idx > len(self.list_id):
-                    id = self.tv.insert(self.list_id[idx-2], 0, text=item[1], values=(item[2]))
+                    self.list_id = []
+                    id = self.tv.insert("", 0, text=item[1], values=(item[2]))
 
                     self.list_id.append(id)
+                elif idx > 1:
+                    while len(self.list_id) >= idx:
+                        self.list_id.pop()
 
-                elif idx < len(self.list_id):
-                    self.list_id.pop()
-                    #
-                    id = self.tv.insert(self.list_id[idx-2], 0, text=item[1], values=(item[2]))
-                    self.list_id.append(id)
+                    if idx > len(self.list_id):
+                        id = self.tv.insert(self.list_id[idx-2], 0, text=item[1], values=(item[2]))
+
+                        self.list_id.append(id)
+
+                    elif idx < len(self.list_id):
+                        self.list_id.pop()
+                        #
+                        id = self.tv.insert(self.list_id[idx-2], 0, text=item[1], values=(item[2]))
+                        self.list_id.append(id)
+        else:
+            # fille the treeview with the refs to the pages
+            for n in range(self.page_count):
+                self.tv.insert("", 0, text="Page", values=(n+1))
                 
     # hide the outline
     def fhidetoc(self):
