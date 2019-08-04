@@ -378,16 +378,18 @@ class Application(ttk.Frame):
     # choose a file to open
     def chooseFile(self):
         
-        self.filename = askopenfilename(parent=self.master, 
+        filename = askopenfilename(parent=self.master, 
            initialdir="doc",
            initialfile='',
            filetypes=[("PDF", '*.pdf'), ("All files", "*")],
            font_size=font_size)
         
-        # load the file
-        self.getDoc(self.filename)
-        # fill canvas
-        self.fcanvas()
+        if filename:
+            self.filename = filename
+            # load the file
+            self.getDoc(self.filename)
+            # fill canvas
+            self.fcanvas()
 
     def fdelete(self):
         for item in self.canvas_list:
