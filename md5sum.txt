@@ -1,13 +1,13 @@
-d2a0ffda38b1c4f56c1b3252712b1cb0  pdfViewer.py
+6db0241a215a7118a8e21768dacaf25a  pdfViewer.py
+05b6f692458ced4f8dfd79815e0fba3b  pdfviewer.sh
+dcdd2210db65aaa45287d6360441690e  pdfviewer.svg
 35405396b8d8d6e236fd03081300cbe2  _fitz.cpython-37m-x86_64-linux-gnu.so
 7205e4292e8123b2031247c8a1722285  fitz.py
 014543a808466acae4f1510a68db2130  __init__.py
 2140f85b51c6337a96e75dd0bfbf0635  utils.py
 abe602e03ecefea72713855b2e1d70ba  autoscrollbar.py
 76443da736c20f5b500446a5b70f0ff2  constants.py
-e0a07bacd3fb5ce3343c27f6c46c3850  constants.py~
 6afab2e385a0c6b0b2d02b9ebccab23c  filebrowser.py
-ebd81954c4e63412ffcb2d162e614230  filebrowser.py~
 eeaae53810029af4f30185f4258f585f  functions.py
 f2706fc8770a90784ae4f72aabed21ca  __init__.py
 840eec2f13f1ba3b5808be28a5e36314  __main__.py
