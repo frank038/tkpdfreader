@@ -1,4 +1,4 @@
-6db0241a215a7118a8e21768dacaf25a  pdfViewer.py
+2c2fbcfc82f52c8272da559b12a6428c  pdfViewer.py
 05b6f692458ced4f8dfd79815e0fba3b  pdfviewer.sh
 dcdd2210db65aaa45287d6360441690e  pdfviewer.svg
 35405396b8d8d6e236fd03081300cbe2  _fitz.cpython-37m-x86_64-linux-gnu.so
