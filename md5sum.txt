@@ -1,14 +1,17 @@
-2c2fbcfc82f52c8272da559b12a6428c  pdfViewer.py
-05b6f692458ced4f8dfd79815e0fba3b  pdfviewer.sh
+4599663a74168d461d60b1bdc011c9fb  pdfViewer.py
+a5666d01f78606499ad3e146bc99b0bb  pdfviewer.sh
 dcdd2210db65aaa45287d6360441690e  pdfviewer.svg
-35405396b8d8d6e236fd03081300cbe2  _fitz.cpython-37m-x86_64-linux-gnu.so
-7205e4292e8123b2031247c8a1722285  fitz.py
-014543a808466acae4f1510a68db2130  __init__.py
-2140f85b51c6337a96e75dd0bfbf0635  utils.py
-abe602e03ecefea72713855b2e1d70ba  autoscrollbar.py
-76443da736c20f5b500446a5b70f0ff2  constants.py
-6afab2e385a0c6b0b2d02b9ebccab23c  filebrowser.py
-eeaae53810029af4f30185f4258f585f  functions.py
-f2706fc8770a90784ae4f72aabed21ca  __init__.py
-840eec2f13f1ba3b5808be28a5e36314  __main__.py
-e9b23dbcf36f13970b6dec64fbf90779  path_button.py
+
+35405396b8d8d6e236fd03081300cbe2  fitz/_fitz.cpython-37m-x86_64-linux-gnu.so
+7205e4292e8123b2031247c8a1722285  fitz/fitz.py
+014543a808466acae4f1510a68db2130  fitz/__init__.py
+2140f85b51c6337a96e75dd0bfbf0635  fitz/utils.py
+
+
+abe602e03ecefea72713855b2e1d70ba  tkfilebrowser/autoscrollbar.py
+76443da736c20f5b500446a5b70f0ff2  tkfilebrowser/constants.py
+6afab2e385a0c6b0b2d02b9ebccab23c  tkfilebrowser/filebrowser.py
+eeaae53810029af4f30185f4258f585f  tkfilebrowser/functions.py
+f2706fc8770a90784ae4f72aabed21ca  tkfilebrowser/__init__.py
+840eec2f13f1ba3b5808be28a5e36314  tkfilebrowser/__main__.py
+e9b23dbcf36f13970b6dec64fbf90779  tkfilebrowser/path_button.py
