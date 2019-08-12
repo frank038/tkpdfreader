@@ -1,6 +1,6 @@
 # tkpdfreader
 by frank038
-v. 0.4
+v. 0.5
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY. Anyone can use and modified it for any purpose.
 
@@ -10,10 +10,10 @@ The first steps toward an indipendent pdf reader.
 
 How to start this program: pdfViewer.py FILE_TO_OPEN [FONT_SIZE]
 
-Implemented (more or less): Toc, page selection/next/previous, zoom, page rotation, printing, metadata reading, opening of encrypted pdf files (with password), annotations reading and insertion (Text, Highlight, Rectangle and Freetext), insertion of images, saving of the file attached or embedded, links, searching for text, at the moment in the page. And: the size of the program is saved when it change; standard keyboard navigation; visualization of the metadata, saving.
+Implemented: Toc, page selection/next/previous, zoom, page rotation, printing, metadata reading, opening of encrypted pdf files (with password), annotations reading and insertion (Text, Highlight, Rectangle and Freetext), saving of the file attached or embedded, links, searching for text. And: the size of the program is saved when it change; standard keyboard navigation; visualization of the metadata, saving.
 The document is instantly saved in case of deletion or insertion of annotations.
 
-A couple of minor issues are still present, but it can also be used for daily use. 
+A couple of minor issues are still present, but it can also be used daily. 
 
 Feature: Ctrl+LMB: selection to clipboard; the "Text" annotation is inserted by clicking in the main area as soon as the mouse pointer change; the "Rectangle" and the "Freetext" annotations are inserted by choosing two point in the main area of the document; the "Highlight" annotation is inserted by selecting the area with Ctrl+LMB; RMB to reset all choises about the annotations. The annotations support custom data. RMB to choose to delete each annotations, even those not inserted by the user, and save the attached files in form of annotation. If the file include embedded files a new button appears in the top: click it to know some info about them or to save them (a dialog appears). The RMB should reset everything.
 
