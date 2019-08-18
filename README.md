@@ -1,6 +1,6 @@
 # tkpdfreader
 by frank038
-v. 0.5
+v. 0.5.5
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY. Anyone can use and modified it for any purpose.
 
@@ -15,7 +15,7 @@ The document is instantly saved in case of deletion or insertion of annotations.
 
 A couple of minor issues are still present, but it can also be used daily. 
 
-Feature: Ctrl+LMB: selection to clipboard; the "Text" annotation is inserted by clicking in the main area as soon as the mouse pointer change; the "Rectangle" and the "Freetext" annotations are inserted by choosing two point in the main area of the document; the "Highlight" annotation is inserted by selecting the area with Ctrl+LMB; RMB to reset all choises about the annotations. The annotations support custom data. RMB to choose to delete each annotations, even those not inserted by the user, and save the attached files in form of annotation. If the file include embedded files a new button appears in the top: click it to know some info about them or to save them (a dialog appears). The RMB should reset everything.
+Feature: Ctrl+LMB: selection to clipboard; the "Text" annotation is inserted by clicking in the main area as soon as the mouse pointer change; the "Rectangle" and the "Freetext" annotations are inserted by choosing two point in the main area of the document; the "Highlight" annotation is inserted by selecting the area with Ctrl+LMB; RMB to reset all choises about the annotations. The annotations support custom data. RMB to choose to delete each annotations, even those not inserted by the user, and save the attached files in form of annotation. If the file include embedded files a new button appears in the top: click it to know some info about them or to save them (a dialog appears). Go to page link: just click it. Go to web link: click it to copy to clipboard the link. The RMB should reset everything.
 
 In the doc folder there are two sample files: the password for the file pdf-password.pdf is password.
 
