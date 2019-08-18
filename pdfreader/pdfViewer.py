@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# v. 0.5
+# v. 0.5.5
 
 # the starting zoom level
 starting_zoom = 2.5
@@ -316,8 +316,10 @@ class Application(ttk.Frame):
         self.list_id = []
         # list of list of links info: type, rect, page or uri
         self.rect_link_list = []
-        # this variable let user go to the page if the link is selected
+        # this variable let user go to the selected page
         self.link_selected = 0
+        # this variable to copy to clipboard the external link
+        self.weblink_selected = 0
         # the coords of the image to insert
         self.add_image_coords = None
         ## list of links in the current page - type 1 GOTO - type 2 URI
@@ -408,7 +410,7 @@ class Application(ttk.Frame):
                     if point in prect:
                        # if goto type
                        if item[0] == 1:
-                           ll = "Go to page: "+str(item[2])
+                           ll = "Go to page: "+str(item[2]+1)
                            self.label_link_var.set(ll)
                            # this variable let user go to the page if the link is selected
                            self.link_selected = item[2]
@@ -416,11 +418,14 @@ class Application(ttk.Frame):
                        elif item[0] == 2:
                            ll = "External Link: "+item[2]
                            self.label_link_var.set(ll)
+                           # this variable to copy the selected link to the clipboard
+                           self.weblink_selected = str(item[2])
                            break
                     # 
                     else:
-                       # reset the variable
+                       # reset the variables
                        self.link_selected = 0
+                        self.weblink_variable = 0
                        # reset the label
                        self.label_link_var.set("")
                        continue
@@ -915,7 +920,12 @@ class Application(ttk.Frame):
                     self.fcanvas()
                     # reset the variable
                     self.link_selected = 0
-            
+            # web link to clipboard
+            if self.weblink_selected != 0:
+                self.clipboard_clear()
+                self.clipboard_append(self.weblink_selected)
+                # reset
+                self.weblink_selected = 0
             global annot_widg
             if annot_widg == 0:
                 # in term of canvas position
