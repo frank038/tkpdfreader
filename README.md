@@ -6,8 +6,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY. Anyone can use and modified 
 
 A pdf reader in Python3/tkinter based on PyMuPDF by Ruikai Liu and Jorj X. McKie. Required: PyMuPDF (included, no need to download it; Notice: in the fitz folder there is a compiled library file). This program uses custom file and folder dialogs instead of the default tkinter dialogs. They are a slightly modified version of the project by Juliette Monsel (j_4321).
 
-The first steps toward an indipendent pdf reader.
-
 How to start this program: pdfViewer.py FILE_TO_OPEN [FONT_SIZE]
 
 Implemented: Toc, page selection/next/previous, zoom, page rotation, printing, metadata reading, opening of encrypted pdf files (with password), annotations reading and insertion (Text, Highlight, Rectangle and Freetext), saving of the file attached or embedded, links, searching for text. And: the size of the program is saved when it change; standard keyboard navigation; visualization of the metadata, saving.
