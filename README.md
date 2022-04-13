@@ -5,6 +5,7 @@ v. 0.5.5
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY. Anyone can use and modified it for any purpose.
 
 A pdf reader in Python3/tkinter based on PyMuPDF by Ruikai Liu and Jorj X. McKie. Required: PyMuPDF (included, no need to download it; Notice: in the fitz folder there is a compiled library file). This program uses custom file and folder dialogs instead of the default tkinter dialogs. They are a slightly modified version of the project by Juliette Monsel (j_4321).
+Update: if a package with the name python3-fitz exists in your distro, just install it and move over the fitz folder of this program.
 
 How to start this program: pdfViewer.py FILE_TO_OPEN [FONT_SIZE]
 
