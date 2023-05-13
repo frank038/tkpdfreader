@@ -2842,7 +2842,7 @@ open(filename, filetype='type') - from file"""
     def __repr__(self):
         m = "closed " if self.isClosed else ""
         if self.stream is None:
-            if self.name is "":
+            if self.name == "":
                 return m + "fitz.Document(<new PDF, doc# %i>)" % self._graft_id
             return m + "fitz.Document('%s')" % (self.name,)
         return m + "fitz.Document('%s', <memory, doc# %i>)" % (self.name, self._graft_id)
