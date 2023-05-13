@@ -20,10 +20,10 @@ Feature: Ctrl+LMB: selection to clipboard; the "Text" annotation is inserted by 
 
 In the doc folder there are two sample files: the password for the file pdf-password.pdf is password.
 
-Issue: this program was developped using Python version 3.7. With Python version 3.11, this program cannot be launched. To solve this issue go into the fitz directory and change the name of the following file 
+Issue: this program was developped using Python version 3.7 and validated with Python version 3.11. For python version greater than 3.11 (or also lower), change the name of the following file 
 from
-_fitz.cpython-37m-x86_64-linux-gnu.so
-to
 _fitz.cpython-311-x86_64-linux-gnu.so
+to the correct python version, for example:
+_fitz.cpython-312m-x86_64-linux-gnu.so
 
 ![My image](https://github.com/frank038/tkpdfreader/blob/master/img1.png)
