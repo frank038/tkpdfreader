@@ -643,7 +643,7 @@ class FileBrowser(tk.Toplevel):
     def _validate_single_sel(self):
         """Validate selection in open mode without multiple selection."""
         sel = self.right_tree.selection()
-        if self.mode is "openfile":
+        if self.mode == "openfile":
             if len(sel) == 1:
                 sel = sel[0]
                 tags = self.right_tree.item(sel, "tags")
